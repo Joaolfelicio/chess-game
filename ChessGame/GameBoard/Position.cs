@@ -19,5 +19,11 @@ namespace ChessGame.Board
         {
             return $"{Column}, {Row}";
         }
+
+        public void SetAllowedMoves(int row, int column)
+        {
+            Row = row;
+            Column = column;
+        }
     }
 }

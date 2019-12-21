@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ChessGame.Board
 {
-    public class Piece
+    public abstract class Piece
     {
         public Piece(GameBoard board, Color color)
         {
@@ -23,5 +23,7 @@ namespace ChessGame.Board
         {
             NumberOfMoves++;
         }
+
+        public abstract bool[,] PossibleMoves();
     }
 }
